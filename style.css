@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sans-serif';
+}
+
+
+body {
+    background-color: #966bc7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container-login {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+
+
+
+.caixa-login {
+    background-color: #8c91c4;
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(194, 38, 168, 0.2);
+}
+
+
+
+
+.caixa-login h1 {
+    color: #000000;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+
+.descricao {
+    color: #000000;
+    font-size: 0.92rem;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+
+
+
+.grupo-input {
+    margin-bottom: 20px;
+}
+
+
+.grupo-input label {
+    display: block;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+
+.grupo-input input {
+    width: 100%;
+    padding: 13px 15px;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+.grupo-input input:focus {
+    background-color: #ffffff;
+    border-color: #4290cf;
+    box-shadow: 0 0 0 4px rgba(94, 53, 177, 0.12);
+}
+
+
+.grupo-input input,
+.grupo-input select {
+    width: 100%;
+    padding: 13px 15px;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #050505;
+  
+   
+}
+
+
+.btn-entrar {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient( #4d7ee7, #4b65da);
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+    
+}
+
+
+.btn-entrar:hover {
+    box-shadow: 0 6px 15px rgba(93, 145, 223, 0.35);
+}
+
+
+
+
+.rodape-login {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #050505;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+
+.rodape-login a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.rodape-login a:hover {
+    text-decoration: underline;
+}
+
+
+.voltar {
+    display: inline-block;
+    margin-top: 14px;
+    color: #000000 ;
+    font-weight: normal ;
+    font-size: 0.85rem;
+}
