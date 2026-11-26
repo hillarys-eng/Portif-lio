@@ -1,225 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Hillary</title>
-  <link rel="stylesheet" href="telainicial.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="telainicial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-
-
-  <header class="header">
-    <div class="container nav-container">
-    <nav class="nav">
-        <a href="#sobre">Sobre mim</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#projetos">Projetos</a>
-      </nav>
-    </div>
-  </header>
-
-
-  <main>
-    <section id="sobre" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <h1> Hillary </h1>
-          <p>
-          Meu nome é Hillary. Sou uma pessoa muito sorridente, gosto de dançar e de escutar música.
-           Sou um pouco vergonhosa no começo, mas, quando conheço melhor as pessoas, 
-           vou me soltando e mostrando quem realmente sou. Gosto de ser eu mesma, 
-           não mudo meu jeito de ser para agradar ninguém, pois acredito que cada pessoa tem sua própria essência.
-           Tenho sonhos e objetivos que desejo realizar no futuro. Um dos meus maiores sonhos é me tornar uma maquiadora profissional 
-           e ter meu próprio espaço de maquiagem, onde eu possa trabalhar com aquilo que amo. 
-           Sei que, para ser maquiadora, não é obrigatório ter uma faculdade, mas é muito importante buscar conhecimento, 
-           desenvolver técnicas, praticar bastante e também aprender a administrar meu próprio negócio.
-            Sei que, para realizar esse sonho, precisarei de dedicação, esforço e persistência. 
-            Quero crescer profissionalmente, conquistar minha independência e ter orgulho de tudo aquilo que conseguir construir.
-             Acredito que, com fé, força de vontade e determinação, sou capaz de realizar meus sonhos.
-           Essa sou eu, Hillary: uma menina sorridente, de personalidade própria, cheia de sonhos e com muita vontade de conquistar meu futuro!
-          </p>
-          <div class="hero-buttons">
-            <a href="#projetos" class="btn-primary">Projetos</a>
-            <a href="#habilidades" target="_blank" class="btn-habilidades">Habilidades</a>
-          </div>
+    <header class="header">
+        <div class="header-content">
         </div>
 
-
-        <div class="hero-image">
-          <img src="./img/fotohillary.png" alt="Foto de hillary">
-        </div>
-      </div>
-    </section>
-
-
-    
-    <section id="habilidades" class="habilidades-section">
-      <div class="container">
        
-        <div class="habi-row">
-          <div class="habi-text">
-            <h3>Experiências /Áreas de atuação</h3>
-            <p>
-              Tecnologia da Informação (TI), Informática e Desenvolvimento Web, Tenho experiências em
-              atividades relacionadas à tecnologia e informática, utilizando ferramentas como VSCode,
-              Figma e BR Modelo
-            </p>
-          </div>
 
-
-          <div class="habi-card">
-            <h3>Tecnologias conhecidas</h3>
+        <nav class="menu-lateral">
             <ul>
-              <li>Sql</li>
-              <li>C#</li>
-              <li>Css</li>
-              <li>HTML</li>
+                 <li><a href="./index.html"> Início</a></li>
+                <li><a href="./telacadastroaluno.html"> Cadastrar Aluno</a></li>
+                <li><a href="./telalistagemturma.html"> Listar turma</a></li>
+                <li><a href="./telacadastroturma.html">Cadastrar Turma</a></li>
+                <li><a href="./telacadastroprojeto.html"> Cadastrar Projeto</a></li>
+                <li><a href="./portfolio.html"> Portfólio</a></li>
             </ul>
-          </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="conteudo-principal">
+            <h2>Bem-vindo(a)!</h2>
+            <p class="subtitulo">Escolha uma das opções abaixo para navegar pelo sistema:</p>
+
+            <section class="cards-navegacao">
+                <a href="./telacadastroaluno.html" class="card">
+                    <i class="fa-solid fa-user-plus icone-card"></i>
+                    <h3>Cadastrar Aluno</h3>
+                    <p>Adicione um novo aluno com matrícula, turma e situação.</p>
+                    <span id="total-alunos" class="contador">0 alunos salvos</span>
+                </a>
+               
+                <a href="./telacadastroturma.html" class="card">
+                    <i class="fa-solid fa-user-plus icone-card"></i>
+                    <h3>Cadastrar Turma</h3>
+                    <p>Adicione uma nova turma com professor e alunos.</p>
+                    <span id="total-turmas" class="contador">0 turmas salvos</span>
+                </a>
+
+                <a href="./telalistagemturma.html" class="card">
+                    <i class="fa-solid fa-users icone-card"></i>
+                    <h3>Listar turma</h3>
+                    <p>Veja as turmas cadastradas e abra a foto em modal.</p>
+                </a>
+
+                <a href="./telacadastroprojeto.html" class="card">
+                    <i class="fa-solid fa-folder-plus icone-card"></i>
+                    <h3>Cadastrar Projeto</h3>
+                    <p>Registre projetos com responsável, prazo e status.</p>
+                    <span id="total-projetos" class="contador">0 projetos salvos</span>
+                </a>
+            </section>
         </div>
+    </main>
 
-
- 
-        <div class="habi-row">
-          <div class="habi-text">
-            <h3>Habilidades & Certificados</h3>
-            <p>
-              Tenho conhecimentos básicos em HTML, e CSS, utilizados na criação e 
-            estilização de páginas. Possuo certificados  de conclusão do   9º ano e de 
-            um curso no qual aprendi a criar  uma conta no YouTube. 
-            Estou sempre disposta a aprender coisas novas e desenvolver minhas
-            habilidades.
-
-            </p>
-          </div>
-
-
-          <div class="habi-card card-ferramentas">
-            <h3>Ferramentas conhecidas</h3>
-            <ul>
-              <li>Visual Studio Code (VS Code)</li>
-              <li>Figma</li>
-              <li>BR Modelo</li>
-              <li>HTML</li>
-              <li>Microsoft Excel</li>
-              <li>Microsoft Word</li>
-              <li>PowerPoint</li>
-              <li>Canva</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <section id="projetos" class="projects-section">
-        <div class="container">
-        <div class="section-header">
-          <h2>Projetos</h2>
-          <div class="title-underline"></div>
-        </div>
-    <div class="projects-list">
-          <article class="project-card">
-            <div class="project-info">
-              <h3>Pokemon</h3>
-              <p>
-               O projeto foi desenvolvido com foco na organização visual, estilização dos componentes e experiência do usuário.
-               Tecnologias: HTML e CSS. JavaScript, caso tenha sido utilizado no projeto.
-              </p>
-              <a href="https://github.com/hillarys-eng/Pokemon "class="btn-project">View Project</a>
-            </div>
-            <div class="project-media">
-              <img src="./img/pokemon.png" alt="Projeto Escolha seu Pokemon">
-            </div>
-          </article>
-
-
-          <article class="project-card">
-            <div class="project-info">
-              <h3>Rpg</h3>
-              <p>
-                Criação de uma interface de personagem RPG, com informações como nome, nível, pontos
-                de vida e habilidades, trabalhando a organização e a apresentação dos dados.
-                Tecnologias: HTML, CSS e C#.
-              </p>
-              <a href="#" class="btn-project">View Project</a>
-            </div>
-            <div class="project-media">
-              <img src="./img/arthur.png" alt="Projeto Interface RPG">
-            </div>
-          </article>
-
-
-          <article class="project-card">
-            <div class="project-info">
-              <h3>o corvo </h3>
-              <p>
-               Desenvolvi uma página web informativa sobre o filme O Corvo (2024), utilizando HTML para organizar textos, sinopse,
-                imagens e informações sobre o filme. Com esse projeto, pratiquei a estruturação de páginas e a inserção de imagens, 
-                aprimorando meus conhecimentos em desenvolvimento web.
-              </p>
-              <a href="#" class="btn-project">View Project</a>
-            </div>
-            <div class="project-media">
-              <img src="./img/corvo.png" alt="Projeto O Corvo">
-            </div>
-          </article>
-
-
-          <article class="project-card">
-            <div class="project-info">
-              <h3>Sobre mim</h3>
-              <p>
-              Desenvolvi uma página de apresentação profissional para uma maquiadora, 
-              utilizando HTML e CSS para organizar informações, imagens, cores e fontes.
-               O projeto destaca sua trajetória, parcerias, conteúdos e conquistas nas redes sociais, com um visual elegante e profissional.
-              </p>
-              <a href="https://github.com/hillarys-eng/sobre-mim" class="btn-project">View Project</a>
-            </div>
-            <div class="project-media">
-              <img src="./img/bio.png" alt="Projeto Site Pessoal Sobre Mim">
-            </div>
-          </article>
-
-
-          <article class="project-card">
-            <div class="project-info">
-              <h3>Jessica</h3>
-              <p>
-                Eu desenvolvi uma página de perfil com links para redes sociais.
-                 Utilizei HTML para criar a estrutura da página e CSS para estilizar, escolhendo as cores,
-                organizando os elementos e criando os botões.
-                 A ideia foi deixar todas as redes sociais reunidas em um único lugar, de forma simples e organizada
-              </p>
-              <a href="#" class="btn-project">View Project</a>
-            </div>
-            <div class="project-media">
-              <img src="./img/jessica.png" alt="Projeto Cartão Digital Jessica">
-            </div>
-          </article>
-
-
-          <article class="project-card">
-            <div class="project-info">
-              <h3>User</h3>
-              <p>
-              Desenvolvi uma página de login e cadastro de usuários, com campos para nome e senha, 
-              opção de recuperar senha e botão de acesso. Utilizei HTML para estruturar a página e CSS para personalizar o visual. 
-              Com esse projeto, aprimorei meus conhecimentos em criação de interfaces e desenvolvimento web.
-              </p>
-              <a href="" class="btn-project">View Project</a>
-            </div>
-            <div class="project-media">
-              <img src="./img/user.png" alt="Projeto Tela de Login User">
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-
-
-
-
+  
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listagem de Turmas</title>
+  <link rel="stylesheet" href="telalistagemturma.css" />
+</head>
+<body>
+  <header class="menu">
+    <nav class="topbar-nav">
+      <a href="./index.html" class="nav-link">
+         Início
+      </a>
+      <a href="./telacadastroaluno.html" class="nav-link">
+      Cadastrar Aluno
+      </a>
+      <a href="./telalistagemturma.html" class="nav-link">
+         Listar turma
+      </a>
+      <a href="./telacadastroturma.html" class="nav-link">
+         Cadastrar Turma
+      </a>
+      <a href="./telacadastroprojeto.html" class="nav-link">
+        Cadastrar Projeto
+      </a>
+     <a href="./portfolio.html" class="nav-link">
+     Portfólio
+    </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card card-wide">
+      <div class="card-header">
+        <div>
+          <h1>Listagem de Turmas</h1>
+          <p class="subtitle">Consulte as turmas registadas e os respetivos vínculos de professor, alunos e projetos.</p>
+        </div>
+
+        <div class="header-actions">
+          <a href="#" class="btn btn-primary">+ Cadastrar Turma</a>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <input
+          type="search"
+          id="pesquisaTurma"
+          class="search-input"
+          placeholder="Pesquisar por ID, professor, aluno ou projeto..."
+        />
+      </div>
+
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Aluno ID</th>
+              <th>Professor</th>
+              <th>Alunos</th>
+              <th>Projetos</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>101</strong></td>
+              <td>25</td>
+              <td>Prof. Marina Silva</td>
+              <td>Lucas Rocha, Ana Clara, Gabriel Costa</td>
+              <td>Sistema de Biblioteca, App de Finanças Pessoais</td>
+             
+                <a href="#" class="btn btn-sm btn-secondary">Detalhes</a>
+                <a href="#" class="btn btn-sm btn-primary">Editar</a>
+
+            </tr>
+            <tr>
+              <td><strong>102</strong></td>
+              <td>31</td>
+              <td>Prof. Carlos Mendes</td>
+              <td>Beatriz Lima, Rafael Souza</td>
+              <td>Portal Académico, Gestor de Estoque</td>
+              <td class="col-actions">
+                <a href="#" class="btn btn-sm btn-secondary">Detalhes</a>
+                <a href="#" class="btn btn-sm btn-primary">Editar</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

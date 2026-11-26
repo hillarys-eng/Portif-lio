@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Aluno</title>
+    <link rel="stylesheet" href="telacadastroaluno.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+        </div>
+
+
+        <nav class="menu-lateral">
+            <ul>
+                <li><a href="./index.html"> Início</a></li>
+                <li><a href="./telacadastroaluno.html"> Cadastrar Aluno</a></li>
+                <li><a href="./telalistagemturma.html"> Listar turma</a></li>
+                <li><a href="./telacadastroturma.html">Cadastrar Turma</a></li>
+                <li><a href="./telacadastroprojeto.html"> Cadastrar Projeto</a></li>
+                <li><a href="./Portifólio.html"> Portfólio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="conteudo-principal">
+            <h2>Cadastro de Aluno</h2>
+
+            <form id="form-cadastro-aluno" class="formulario-aluno">
+                <div class="campo">
+                    <label for="matricula">Matrícula *</label>
+                    <input type="text" id="matricula" name="matricula" placeholder="Ex: 202604" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Lucas Pereira" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="Ex: lucas.pereira@escola.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="turma">Turma *</label>
+                    <select id="turma" name="turma" required>
+                        <option value="">Selecione uma turma</option>
+                        <option value="1º Ano A">1º Ano A</option>
+                        <option value="1º Ano B">1º Ano B</option>
+                        <option value="2º Ano A">2º Ano A</option>
+                        <option value="2º Ano B">2º Ano B</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="situacao">Situação</label>
+                    <select id="situacao" name="situacao">
+                        <option value="Matriculado">Matriculado</option>
+                        <option value="Trancado">Trancado</option>
+                        <option value="Transferido">Transferido</option>
+                    </select>
+                </div>
+
+                <p id="mensagem-status" class="mensagem-status"></p>
+
+                <div class="botoes">
+                    <button type="submit" class="btn-primario">Salvar Aluno</button>
+                    <button type="reset" class="btn-secundario">Limpar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

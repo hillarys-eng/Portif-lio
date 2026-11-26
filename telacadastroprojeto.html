@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastrar Projeto</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="telacadastroprojeto.css" />
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="menu" aria-label="Menu principal">
+      <ul class="menu-lista">
+        <li><a href="./index.html"> Início</a></li>
+        <li><a href="./telacadastroaluno.html"> Cadastrar Aluno</a></li>
+        <li><a href="./telalistagemturma.html"> Listar turma</a></li>
+        <li><a href="./telacadastroturma.html"> Cadastrar Turma</a></li>
+        <li><a href="./telacadastroprojeto.html">Cadastrar Projeto</a></li>
+        <li><a href="./Portifólio.html"> Portfólio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-wrapper">
+    <section class="form-card" aria-labelledby="titulo-projeto">
+      <h1 id="titulo-projeto" class="page-title">Cadastrar Projeto</h1>
+      <p class="page-subtitle">Preencha os dados para registar o projeto e vincular ao aluno.</p>
+
+      <form id="formProjeto">
+        <div class="form-group">
+          <label for="alunoId">ID do Aluno *</label>
+          <input id="alunoId" name="AlunoId" type="number" placeholder="Ex: 1" min="1" required />
+        </div>
+
+        <div class="form-group">
+          <label for="nomeAluno">Nome do Aluno *</label>
+          <input id="nomeAluno" name="NomeAluno" type="text" placeholder="Ex: Mariana Oliveira" required />
+        </div>
+
+        <div class="form-group">
+          <label for="tituloProjeto">Título do Projeto *</label>
+          <input id="tituloProjeto" name="TituloProjeto" type="text" placeholder="Ex: Portal de Matrículas" required />
+        </div>
+
+        <div class="form-group">
+          <label for="tecnologiaUtilizada">Tecnologia Utilizada *</label>
+          <input id="tecnologiaUtilizada" name="TecnologiaUtilizada" type="text" placeholder="Ex: C#, .NET, HTML/CSS" required />
+        </div>
+
+        <div class="form-group">
+          <label for="linkAcesso">Link de Acesso *</label>
+          <input id="linkAcesso" name="LinkAcesso" type="url" placeholder="Ex: https://meuprojeto.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="descricao">Descrição *</label>
+          <textarea id="descricao" name="Descricao" rows="4" placeholder="Descreva o projeto..." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Salvar Projeto</button>
+          <button type="reset" class="btn btn-secondary">Limpar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
